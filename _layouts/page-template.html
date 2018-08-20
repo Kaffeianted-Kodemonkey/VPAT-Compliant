@@ -5,20 +5,27 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
     {% include head.html %}
     {% include header.html %}
 
     <main role="main">
-      <div class="row mt-5 ml-3">
-        <div class="col-4">
-          <h1>{{ page.title }}</h1>
-          <p>We have Experts ready to help!</p>
-          <a class="btn btn-md btn-info" href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank">Book Free Consultation</a>
-        </div>
-        <div class="col-8">
-          <img src="{{ site.url }}/assets/images/{{ page.image }}">
+      <div class="row">
+        <div class="col-4 offset-md-2">
+          <h2 class="sr-only">VPAT Documnets - Get a Free Consultation Today<h2>
+          <figure class="nidden-xs hidden-sm">
+            <img class="first-slide" src="{{ site.url }}/assets/images/{{ page.image }}" alt="{{ page.title }} banner image">
+          </figure>
         </div>
       </div>
+      <div class="row pr-4">
+        <div class="col-8 offset-md-2 text-right">
+          <p><a class="btn btn-lg btn-info" href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank" role="button">Book a Free Consultations</a></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
 
       <div class="container">
         <div class="row">
