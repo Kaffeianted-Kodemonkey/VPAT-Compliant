@@ -21,11 +21,14 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6 offset-2">
+          <div class="col-2">
+            {% include social.html %}
+          </div>
+          <div class="col-6">
             {{ content }}
           </div>
           <div class="col-3">
-            <p><img src="{{ site.url }}/assets/images/Accessibilty-Audit-Hero-Image.jpg" style="width:85%;" class="img-thumbnail img-fluid" alt="Web Accessibilty Brochure"></p>
+            <p><img src="{{ site.url }}/assets/images/Accessibilty-Audit-Hero-Image.jpg" style="width:100%;" class="img-thumbnail img-fluid" alt="Web Accessibilty Brochure"></p>
 
             {% if page.category == "VPAT" %}
               {% include VPAT-Brochure.html %}
