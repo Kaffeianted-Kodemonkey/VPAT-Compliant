@@ -9,9 +9,14 @@ body {
   overflow-x:hidden;
 }
 
+h3 {
+  font-size: 1.3em;
+}
+
 h5.card-title {
   font-size: 1.0em;
 }
+
 h6.card-title {
   font-size: 1.6em;
 }
