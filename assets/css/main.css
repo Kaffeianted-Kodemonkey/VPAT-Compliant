@@ -9,15 +9,15 @@ body {
   overflow-x:hidden;
 }
 
-h3 {
+h4 {
   font-size: 1.3em;
 }
 
-h5.card-title {
+h2.card-title {
   font-size: 1.0em;
 }
 
-h6.card-title {
+h3.card-title {
   font-size: 1.6em;
 }
 
