@@ -9,6 +9,10 @@ body {
   overflow-x:hidden;
 }
 
+main {
+  min-height: 850px;
+}
+
 h4 {
   font-size: 1.3em;
 }

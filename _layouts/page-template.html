@@ -7,7 +7,11 @@
         <div class="col-10 offset-md-2">
           <h2 class="sr-only">{{ page.caption }}<h2>
           <figure>
-            <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" style="width: 80%;" alt="{{ page.title }}">
+            {% if page.title == "Accessibilty News & Resorces" %}
+              <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" alt="{{ page.title }}">
+              {% else %}
+                <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" style="width: 80%;" alt="{{ page.title }}">
+              {% endif %}
           </figure>
         </div>
       </div>
