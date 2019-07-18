@@ -1,51 +1,51 @@
+{% include head.html %}
+{% include header.html %}
 
-    {% include head.html %}
-    {% include header.html %}
-
-    <main role="main">
-      <div class="row">
-        <div class="col-10 offset-md-2">
-          <h2 class="sr-only">{{ page.caption }}<h2>
+<main role="main">
+  <div class="row">
+    <div class="col-10 offset-md-2">
+      <h2 class="sr-only">{{ page.caption }}
+        <h2>
           <figure>
             {% if page.title == "Accessibilty News & Resorces" %}
-              <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" alt="{{ page.alt }}">
-              {% else %}
-                <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" style="width: 80%;" alt="{{ page.alt }}">
-              {% endif %}
+            <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" alt="{{ page.alt }}">
+            {% else %}
+            <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" style="width: 80%;" alt="{{ page.alt }}">
+            {% endif %}
           </figure>
-        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-md-2 text-right">
+      <p><a class="btn btn-lg btn-info" href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank" role="button">Book a Free Consultation</a></p>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+        {% include social.html %}
       </div>
-      <div class="row">
-        <div class="col-8 offset-md-2 text-right">
-          <p><a class="btn btn-lg btn-info" href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank" role="button">Book a Free Consultation</a></p>
-        </div>
+      <div class="col-6" id="content">
+        {{ content }}
       </div>
+      <div class="col-3">
+        {% if page.title != "VPAT Newsletter" %}
+        <p><img src="{{ site.url }}/assets/images/Accessibilty-Audit-Hero-Image.jpg" style="width:100%;" class="img-thumbnail img-fluid" alt="Web Accessibilty Brochure"></p>
 
-      <hr class="featurette-divider">
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-2">
-            {% include social.html %}
-          </div>
-          <div class="col-6" id="content">
-            {{ content }}
-          </div>
-          <div class="col-3">
-            {% if page.title != "VPAT Newsletter" %}
-              <p><img src="{{ site.url }}/assets/images/Accessibilty-Audit-Hero-Image.jpg" style="width:100%;" class="img-thumbnail img-fluid" alt="Web Accessibilty Brochure"></p>
-
-              {% if page.category == "VPAT" %}
-                {% include VPAT-Brochure.html %}
-              {% else %}
+        <!--{% if page.category == "VPAT" %}-->
+        {% include VPAT-Brochure.html %}
+        <!--  {% else %}
                 {% include Web-Accessibility-Brochure.html %}
               {% endif %}
-            {% endif %}
-          </div><!-- Column -->
-        </div>
-      </div>
+            {% endif %}-->
+      </div><!-- Column -->
+    </div>
+  </div>
 
-      <hr class="featurette-divider">
+  <hr class="featurette-divider">
 
-      <!-- FOOTER -->
-      {% include footer.html %}
+  <!-- FOOTER -->
+  {% include footer.html %}
