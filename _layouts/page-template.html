@@ -1,28 +1,30 @@
 {% include head.html %}
 {% include header.html %}
 
-<main role="main">
+<header role="banner">
   <div class="row">
     <div class="col-10 offset-md-2">
-      <h2 class="sr-only">{{ page.caption }}
-        <h2>
-          <figure>
-            {% if page.title == "Accessibilty News & Resorces" %}
-            <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" alt="{{ page.alt }}">
-            {% else %}
-            <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" style="width: 80%;" alt="{{ page.alt }}">
-            {% endif %}
-          </figure>
+      <h1 class="sr-only">{{ page.caption }}</h1>
+      <figure>
+        {% if page.title == "Accessibilty News & Resorces" %}
+        <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" alt="{{ page.alt }}">
+        {% else %}
+        <img class="img-fluid" src="{{ site.url }}/assets/images/{{ page.image }}" style="width: 80%;" alt="{{ page.alt }}">
+        {% endif %}
+      </figure>
     </div>
   </div>
+
   <div class="row">
     <div class="col-8 offset-md-2 text-right">
       <p><a class="btn btn-lg btn-info" href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank" role="button">Book a Free Consultation</a></p>
     </div>
   </div>
+</header>
 
-  <hr class="featurette-divider">
+<hr class="featurette-divider">
 
+<main role="main">
   <div class="container-fluid">
     <div class="row">
       <div class="col-2">
@@ -38,8 +40,7 @@
       </div><!-- Column -->
     </div>
   </div>
-
-  <hr class="featurette-divider">
+  </main>
 
   <!-- FOOTER -->
   {% include footer.html %}

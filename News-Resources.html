@@ -1,0 +1,47 @@
+---
+layout: page-template
+title: News & Resorces
+category: news, Resorces
+image: NewsResources.png
+caption: Accessibility Monitoring - Get a Free Consultation Today!
+description: Updates and Resources for Accessibilty in a digital world!
+---
+
+<h2>Welcome to our Accessibility Information Center</h2>
+
+<p>We keep up on the ever-changing of Web Accessibility and VPAT documents so you do not have to.</p>
+
+<p>Our experts stay informed about new versions and how they will affect you. We want to make sure that all Certifications
+we issue are at the current version and level that the <strong>WCAG</strong> and <strong>VPAT</strong> have to offer. In doing so we thought we would share
+our research and findings with you.</p>
+
+<h3>Posts & News Updates:</h3>
+<small>(Questions &  Comments welcomed see bottom of the post.)</small>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <!-- <a href="{{ post.url }}">{{ post.title }}</a>--> Post coming soon. We are writing one now! <br />
+      <a href="{{site.url}}/VPAT-Newsletter">Join our newsletter</a> and be notified when a new post comes out.
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Resources:</h3>
+<p>Here are some very valuable tools and information sites that you can use as you do your research:</p>
+
+<ul>
+  <li><a href="https://webaim.org/services/training/" target="_blank">WebAIM</a> - Training for Accessibility Experts</li>
+  <li><a href="https://www.itic.org/policy/accessibility/vpat" target="_blank">ITI</a> - Information about the VPAT</li>
+  <li><a href="https://www.access-board.gov/" target="_blank">United States Acess Board</a> - Responsible for developing accessibility standards that govern Federal procurement practices</li>
+  <li><a href="https://www.section508.gov/manage/laws-and-policies" target="_blank">Section 508</a> - IT Accessibility Laws and Policies</li>
+  <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">W3C Web Accessibility Initiative</a> - Web Content Accessibility Guidelines (WCAG) Overview</li>
+  <li><a href="https://www.wuhcag.com/wcag-checklist/" target="_blank">WCAG</a> - A handy web accessibility checklist</li>
+</ul>
+
+<hr />
+<h2>Contact Us</h2>
+
+<p>Is your site ADA compliant? Do you need a VPAT completed? </p>
+<p>Talk to an <strong>Accessibility Specialist <span class="text-uppercase text-danger">TODAY</span></strong>.</p>
+<p><a class="btn btn-md btn-info" href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank" role="button">Book Free Consultation!</a></p>

@@ -13,16 +13,48 @@ main {
   min-height: 850px;
 }
 
-h4 {
+a {
+  color: #01658e;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #d6e6ec;
+}
+
+.card-subtitle {
   font-size: 1.3em;
+  line-height: 2.2em;
 }
 
-h2.card-title {
-  font-size: 1.0em;
+.lead {
+  /*color: #ff9900;*/
+  font-weight: 500;
 }
 
-h3.card-title {
-  font-size: 1.6em;
+.text-orange {
+  color: #eed9c4;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #01658e;
+    border-color: #01658e;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ea8825;
+    border-color: #ea8825;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #f4973a;
+    border-color: #f4973a;
+}
+
+.card-body {
+  height: 380px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
